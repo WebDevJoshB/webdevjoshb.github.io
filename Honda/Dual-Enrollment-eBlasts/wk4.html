@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Updated: 09/29/2015 JSB -->
+<!-- Updated: 10/08/2015 JSB -->
 <!-- Updated for portfolio 01/04/2021 JSB -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -36,34 +36,30 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 @media only screen and (max-width:599px) {
 .wrapper { width:480px !important; font-size:85% !important; }
 .innerWrap { width:450px !important; height:auto !important; }
+img { height:auto !important; }
 #footer .innerWrap { width:480px !important; }
 #logo>tbody>tr:first-of-type>td:last-of-type { padding-top:70px !important; }
-#logo tr:nth-of-type(2)>td:last-of-type { padding-top:12px !important; }
+#logo>tbody>tr:last-of-type>td { padding-top:12px !important; line-height:130% !important; }
 #introWrap>tbody>tr:nth-of-type(2)>td { padding-left:22px !important; }
 #introWrap>tbody>tr:last-of-type>td { padding:22px 10px !important; }
-#introCopy>tbody>tr>td { width:100% !important; padding:0 20px 12px 0 !important; }
-#introCopy>tbody>tr>td td { padding-top:0 !important; }
-#introList>tbody>tr:nth-of-type(2) td, #introList>tbody>tr:last-of-type td { font-size:90% !important; line-height:125% !important; }
-#introList>tbody>tr:first-of-type>td { padding:0 25px 12px 0 !important; }
-#introList>tbody>tr:last-of-type>td:first-of-type { width:40% !important; }
-#introList>tbody>tr:last-of-type>td:last-of-type { width:60% !important; }
-#introList>tbody>tr:last-of-type>td:last-of-type table { width:65% !important; }
-#introList>tbody>tr:first-of-type>td { padding-right:125px !important; }
-#introList br { display:none; }
+#introCopy>tbody>tr>td { display:block; width:100% !important; padding:0 !important; }
+#introCopy table tr:first-of-type td { padding-right:75px !important; padding-bottom:10px !important; font-size:120% !important; }
+#introCopy table tr:last-of-type td { padding-bottom:25px !important; font-size:95% !important; line-height:140% !important; }
+#introList { width:40% !important; }
+#introList>tbody>tr>td { display:block; width:100% !important; padding-top:0 !important; }
+#introList>tbody>tr>td:last-of-type { padding-top:10px !important; }
+#introList td { font-size:90% !important; line-height:130% !important; }
+#introBubble, #introBubble img { width:190px !important; }
+#introBubble>tbody>tr>td { padding-right:40px !important; }
+#introBubble td { font-size:92% !important; }
 #secondaryWrap>tbody>tr:first-of-type>td { padding-left:22px !important; }
-#secondaryCopy>tbody>tr:last-of-type>td { padding-bottom:27px !important; padding-right:22px !important; font-size:88% !important; line-height:130% !important; }
-#secondaryCopy>tbody>tr:last-of-type>td br { display:none; }
-#secondaryCopy table td { padding-left:10px !important; }
-#secondaryCopy table tr:first-of-type td { padding-bottom:14px !important; }
-#secondaryCopy table tr:last-of-type td { padding-right:10px !important; font-size:90% !important; line-height:125% !important; }
-#secondaryCopy table tr:last-of-type br { display:none; }
-#secondaryCopy table>tbody>tr:first-of-type td { padding-top:204px !important; background:url(https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/banner-solo-mobile.jpg) no-repeat -4px 0; outlook:1px solid red; }
-#secondaryList>tbody>tr>td:first-of-type { width:51% !important; }
-#secondaryList>tbody>tr>td:first-of-type td { font-size:90% !important; }
-#secondaryList>tbody>tr>td:last-of-type { width:49% !important; padding-right:12px !important; }
-#benefits img { width:190px !important; height:auto !important; }
-#benefits>tbody>tr:first-of-type table td { font-size:93% !important; }
-#benefits>tbody>tr:last-of-type>td { padding-left:22px !important; }
+#secondaryCopy>tbody>tr>td { display:block; width:100% !important; padding-bottom:15px !important; }
+#secondaryCopy table td { padding-top:0 !important; padding-left:0 !important; padding-right:22px !important; }
+#secondaryCopy table tr:first-of-type td { padding-bottom:10px !important; font-size:120% !important; }
+#secondaryCopy table tr:last-of-type td { padding-right:15px !important; font-size:95% !important; line-height:140% !important; }
+#secondaryList>tbody>tr>td td { font-size:92% !important; }
+#secondaryList>tbody>tr>td { padding-right:12px !important; }
+#benefits img { width:190px !important; }
 #benefits>tbody>tr:last-of-type td { font-size:80% !important; }
 #tertiaryWrap table tr:not(:first-of-type) td { font-size:85% !important; line-height:140% !important; }
 #tertiaryWrap>tbody>tr>td { padding:20px 22px !important; }
@@ -72,7 +68,8 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 #footer img { margin:16px 0 10px; }
 .hide4mobile { display:none !important; }
 .heading { display:block; }
-.banner { width:428px !important; height:auto !important; }
+#banner1 { width:280px !important; margin-left:65px; }
+#banner2 { margin-left:100px; }
 }
 /* Smartphones (portrait only) */
 @media only screen and (max-width:479px) {
@@ -80,36 +77,42 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 .innerWrap { width:300px !important; }
 #footer .innerWrap { width:320px !important; }
 #logo td { display:block; width:100% !important; margin:0 auto; }
-#logo>tbody>tr:first-of-type>td:last-of-type { padding-top:20px !important; font-size:225% !important; }
+#logo>tbody>tr:first-of-type>td:last-of-type { padding-top:20px !important; font-size:220% !important; }
 #logo img { margin-right:-14px; }
+#logo>tbody>tr:last-of-type>td br { display:none; }
+#logo>tbody>tr:last-of-type>td { padding-bottom:20px !important; font-size:135% !important; }
 #introWrap>tbody>tr:nth-of-type(2)>td { padding:0 14px !important; }
-#logo>tbody>tr:nth-of-type(2) br { display:none; }
-#logo>tbody>tr:nth-of-type(2)>td { font-size:135% !important; }
-#logo>tbody>tr:first-of-type td:last-of-type
-#banner { height:128px !important; background-size:290px auto !important; background-position:-6px 0 !important; }
+#introCopy table tr:first-of-type td { padding-right:22px !important; }
+#introCopy table tr:last-of-type td { padding-bottom:20px !important; }
+#introList { width:90% !important; margin-bottom:10px; }
 #introList>tbody>tr:first-of-type>td { padding:0 0 12px !important; }
 #introList>tbody>tr>td { padding:0 0 10px !important; }
 #introList>tbody>tr:last-of-type>td:first-of-type, #introList>tbody>tr:last-of-type>td:last-of-type { width:100% !important; }
 #introList>tbody>tr:last-of-type>td:last-of-type table { width:100% !important; }
 #introList br { display:none; }
 #introList td { display:block; width:100% !important; }
-#secondaryCopy table>tbody>tr:first-of-type td { padding-top:135px !important; background-size:280px auto !important; }
-#secondaryCopy>tbody>tr:last-of-type>td { padding-bottom:18px !important; }
+#introBubble { float:none !important; }
+#introList, #introBubble { margin-left:12px !important; }
+#secondaryWrap>tbody>tr:first-of-type>td { padding-left:14px !important; }
+#secondaryCopy>tbody>tr>td { padding-right:0 !important; }
+#secondaryCopy>tbody>tr:last-of-type>td { padding-bottom:10px !important; }
+#secondaryList { margin-bottom:15px !important; }
 #secondaryList>tbody>tr>td { display:block; width:100% !important; }
 #secondaryList>tbody>tr>td:first-of-type { width:90% !important; margin:0 auto; }
-#secondaryList>tbody>tr>td:last-of-type { width:90% !important; margin:0 auto; padding:18px 0 0 !important; }
-#secondaryCopy table td { padding-left:2px !important; padding-right:14px !important; }
+#secondaryList>tbody>tr>td:last-of-type { width:90% !important; margin:0 auto; padding:18px 0 0 0 !important; }
+#secondaryCopy table td { padding-right:14px !important; }
+#program-facts td:last-of-type { padding-right:20px !important; }
 #benefits>tbody>tr>td>table { float:left; }
 #benefits>tbody>tr:last-of-type>td { padding-left:15px !important; }
 #tertiaryWrap>tbody>tr>td { padding-left:0 !important; padding-right:0 !important; }
 #tertiaryWrap>tbody>tr>td table { width:90% !important; margin:0 auto; }
-.banner { width:272px !important; }
+#banner1, #banner2 { width:220px !important; margin-left:25px !important; }
 }
 </style>
 <!-- Outlook 2000+, Lotus Notes -->
 <!--[if gte mso 9]>
 <style>
-	.wrapper td { line-height:105% !important; }
+	.wrapper td { line-height:120% !important; }
 	#heading td { line-height:85% !important; }
 </style>
 <![endif]-->
@@ -140,36 +143,46 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 					<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/logo-Honda.png" alt="[LOGO] Honda Genuine Parts + Service" style="display:block;"/>
 				</picture>
 			</td>
-			<td dir="ltr" width="60%" valign="top" id="heading" style="padding-top:25px;color:#047dbf;font-family:Arial Rounded MT;font-size:2.646em;line-height:1em;">
-				<b>Good things <br/>
-				come in twos.</b>
+			<td dir="ltr" width="60%" valign="top" id="heading" style="padding-top:25px;color:#047dbf;font-family:Arial Rounded MT,Arial,sans-serif;font-size:2.646em;line-height:1em;">
+				<b><i>Going,&nbsp;going</i>, <br/>
+				Almost gone!</b>
 			</td>
 		</tr>
-		<tr><td dir="ltr" colspan="2" style="padding:15px 0;color:#000000;font-family:Arial Rounded MT,Arial,sans-serif;font-size:1.3em;line-height:1.255em;">
-			Enroll in the <b style="color:#047dbf;">Seasonal</b> and <b style="color:#047dbf;">Warranty Customer Retention Programs</b> for the best of both worlds.
-		</td></tr>
-		<tr><td dir="ltr" colspan="2" id="banner" style="padding-bottom:12px;">
-			<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/banner-main-postcards-wk2.jpg" width="525" height="234" alt="Several Honda Postcards" class="banner" style="display:block;"/>
+		<tr><td dir="ltr" colspan="2" style="padding:15px 0 25px;color:#000000;font-family:Arial Rounded MT,Arial,sans-serif;font-size:1.15em;line-height:1.255em;">
+			This is it &ndash; your last chance to&nbsp;kick off <span class="lnkBlk" style="color:#000000;text-decoration:none;">2016</span> with the combined marketing power of&nbsp;both <b style="color:#047dbf;">Winter&nbsp;Seasonal</b> and&nbsp;<b style="color:#047dbf;">Warranty Customer Retention</b> programs.
 		</td></tr>
 		</table><!-- END: logo -->
 		
-		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="introList">
-		<tr><td colspan="2" style="padding:0 25px 15px 0;color:#047dbf;font-family:Verdana,Arial,sans-serif;font-size:1em;line-height:1.25em;">
-			Start 2016 right with the <b>Winter <br/>
-			Seasonal's</b> proven approach.
-		</td></tr>
-		<tr><td colspan="2" style="padding:0 25px 15px 0;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.667em;">
-			Target Lapsed and Inactive customers with the Seasonal program and build your service business during the first three months of the new year.
-		</td></tr>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="introCopy">
 		<tr>
-			<td width="39%" valign="top">
+			<td style="padding-right:5px;">
+				<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/main-postcard-wk4.jpg" width="277" height="224" alt="Honda Postcard" id="banner1" style="display:block;"/>
+			</td>
+			<td valign="top" style="padding:0 10px 0 0;">
+			
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr><td style="padding:10px 0 13px;color:#2a7fbf;font-family:Verdana,Arial,sans-serif;font-size:1em;line-height:normal;">
+					Enroll now to benefit from <b>Winter Seasonal's</b> proven performance.
+				</td></tr>
+				<tr><td style="padding:0 10px 0 0;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
+					Historically, Seasonal programs have proven themselves to be among the most consistent and cost-effective ways to target Lapsed, Inactive and even New customers for three full months. Don't miss out.
+				</td></tr>
+				</table>
+				
+			</td>
+		</tr>
+		</table><!-- END: introCopy -->
+
+		<table width="58%" align="left" cellpadding="0" cellspacing="0" border="0" id="introList">
+		<tr>
+			<td width="51%" valign="top" style="padding-top:18px;">
 			
 				<table width="100%" cellpadding="0" cellspacing="0" border="0">
 				<tr><td style="color:#047dbf;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
 					Enrollment Period:
 				</td></tr>
 				<tr><td style="padding-bottom:10px;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
-					<span class="lnkBlk" style="color:#000000;text-decoration:none;">Sept 21 – Oct 16, 2015</span>
+					Ends <span class="lnkBlk" style="color:#000000;text-decoration:none;">on Oct 16, 2015</span>
 				</td></tr>
 				<tr><td style="color:#047dbf;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
 					Campaign Period:
@@ -186,7 +199,7 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 				</table>
 			
 			</td>
-			<td width="61%" valign="top">
+			<td width="49%" valign="top" style="padding-top:18px;">
 			
 				<table width="100%" cellpadding="0" cellspacing="0" border="0">
 				<tr><td style="color:#047dbf;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
@@ -200,14 +213,57 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 					Billing Cycle:
 				</td></tr>
 				<tr><td style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
-					Appears on the January Parts <br/>
-					Balance Forward Statement
+					Appears on the January <br/>
+					Parts Balance Forward Statement
 				</td></tr>
 				</table>
 			
 			</td>
 		</tr>
 		</table><!-- END: introList -->
+		
+		<table width="41%" align="right" cellpadding="0" cellspacing="0" id="introBubble">
+		<tr><td style="padding-right:22px;">
+		
+			<table bgcolor="#b4b3b4" align="right" width="178" cellpadding="0" cellspacing="0" border="0">
+			<tr><td>
+				<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/border-top-grey.jpg" width="178" height="17" alt="[STYLE] Top Border" style="display:block;"/>
+			</td></tr>
+			<tr><td style="padding-left:11px;color:#000000;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.85em;line-height:1.15em;">
+				<b>2015 WINTER <br/>
+				SEASONAL RESULTS:</b>
+			</td></tr>
+			<tr><td>
+				<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/dotted-border-white.jpg" width="178" height="14" alt="[STYLE] Dotted White Border" style="display:block;"/>
+			</td></tr>
+			<tr><td style="padding:2px 11px 0;">
+			
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr><td style="padding-bottom:6px;color:#000000;font-weight:bold;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.67em;line-height:normal;">
+					<span style="color:#ffffff;">ROI:</span> $26:1
+				</td></tr>
+				<tr><td style="padding-bottom:6px;color:#000000;font-weight:bold;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.67em;line-height:normal;">
+					<span style="color:#ffffff;">AVG CP $/RO:</span> $249.91
+				</td></tr>
+				<tr><td style="padding-bottom:6px;color:#000000;font-weight:bold;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.67em;line-height:normal;">
+					<span style="color:#ffffff;">Total Response Rate:</span> 6.9%
+				</td></tr>
+				<tr><td style="padding-bottom:6px;color:#000000;font-weight:bold;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.67em;line-height:normal;">
+					<span style="color:#ffffff;">Lapsed Response Rate:</span> 7.0%
+				</td></tr>
+				<tr><td style="padding-bottom:6px;color:#000000;font-weight:bold;font-family:Arial Rounded MT,Arial,sans-serif;font-size:0.67em;line-height:normal;">
+					<span style="color:#ffffff;">Inactive Response Rate:</span> 3.0%
+				</td></tr>
+				</table>
+				
+			</td></tr>
+			<tr><td>
+				<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/border-btm-btm.jpg" width="178" height="16" alt="[STYLE] Bottom Border" style="display:block;"/>
+			</td></tr>
+			</table>
+
+		</td></tr>
+		</table><!-- END: introBubble -->
 		
 	</td></tr>
 	<tr><td style="padding:30px 25px;">
@@ -231,27 +287,32 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 	<tr><td style="padding-left:35px;">
 	
 		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="secondaryCopy">
-		<tr><td style="padding-bottom:10px;">
-			<img src="img/banner-secondary-postcards-wk2.jpg" width="" height="" alt="More postcard samples." class="banner" style="display:block;"/>
-		</td></tr>
-		<tr><td style="padding-bottom:15px;color:#047dbf;font-family:Verdana,Arial,sans-serif;font-size:1em;line-height:1.25em;">
-			Retain more customers with the new <br/>
-			<b>Warranty Customer Retention program.</b>
-		</td></tr>
-		<tr><td style="padding-bottom:15px;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.667em;">
-			This innovative program enables you to deliver competitive offers for service <br/>
-			and parts to warranty repair customers whose status was either Lapsed or <br/>
-			Inactive prior to their warranty repair.
-		</td></tr>
+		<tr>
+			<td valign="top" style="padding:0 16px 20px 0;">
+				<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/secondary-postcards-wk4.jpg" width="203" height="204" alt="More Honda postcard samples." id="banner2" class="banner" style="display:block;"/>
+			</td>
+			<td style="padding-bottom:20px;">
+			
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr><td style="padding:15px 25px 15px 0;color:#047dbf;font-family:Verdana,Arial,sans-serif;font-size:1em;line-height:1.25em;">
+					Get crackin' and lock up 12 months&nbsp;of <b>Warranty Customer Retention program's</b> targeted messaging and free&nbsp;emails.
+				</td></tr>
+				<tr><td style="padding:0 39px 10px 0;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.667em;">
+					Enrolling in the Warranty Customer Retention (WCR) program buys you 12 full months of compelling parts and service messaging and free emails—all targeting customers who were either Lapsed or Inactive prior to their to warranty repairs. So don't delay. Enroll&nbsp;today.
+				</td></tr>
+				</table>
+				
+			</td>
+		</tr>
 		</table><!-- END: secondaryCopy -->
 		
 		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="secondaryList">
 		<tr>
-			<td valign="top" style="padding-left:2px;">
+			<td width="50%" valign="top" style="padding:0 30px 0 2px;">
 			
 				<table width="100%" cellpadding="0" cellspacing="0" border="0">
 				<tr><td style="color:#047dbf;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
-					Program &amp; Enrollment Details
+					Program &amp; Enrollment&nbsp;Details
 				</td></tr>
 				<tr><td>
 				
@@ -319,7 +380,7 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 					</tr>
 					<tr>
 						<td style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
-							<span class="lnkBlk" style="color:#000000;text-decoration:none;">Sept 21 – Oct 16, 2015</span>
+							Ends <span class="lnkBlk" style="color:#000000;text-decoration:none;">on Oct 16, 2015</span>
 						</td>
 					</tr>
 					</table>
@@ -328,12 +389,42 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 				</table>
 			
 			</td>
-			<td valign="top" style="padding-right:30px;">
+			<td width="50%" valign="top" style="padding-right:40px;">
 			
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" id="program-facts">
+				<tr><td style="color:#047dbf;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
+					Program Facts
+				</td></tr>
+				<tr><td>
+				
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td width="10" style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;vertical-align:text-top;">&bull; </td>
+						<td style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
+							Roughly 50% of WCR customers also have CP work done
+						</td>
+					</tr>
+					<tr>
+						<td style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;vertical-align:text-top;">&bull; </td>
+						<td style="color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
+							WCR customers are a small subset of your warranty customers
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom:30px;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;vertical-align:text-top;">&bull; </td>
+						<td style="padding-bottom:30px;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.5em;">
+							Specifically targets lapsed and inactive customers who came in for warranty work
+						</td>
+					</tr>
+					</table>
+					
+				</td></tr>
+				</table><!-- END: program-facts -->
+				
 				<table width="100%" cellpadding="0" cellspacing="0" border="0" id="benefits">
 				<tr><td>
 				
-					<table bgcolor="#b4b3b4" align="right" width="178" cellpadding="0" cellspacing="0" border="0">
+					<table bgcolor="#b4b3b4" width="178" cellpadding="0" cellspacing="0" border="0">
 					<tr><td>
 						<img src="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/border-top-grey.jpg" width="178" height="17" alt="[STYLE] Top Border" style="display:block;"/>
 					</td></tr>
@@ -373,7 +464,7 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 					</table>
 				
 				</td></tr>
-				<tr><td style="padding:10px 0 0 28px;">
+				<tr><td style="padding:10px 0 0 15px;">
 
 					<table width="100%" cellpadding="0" cellspacing="0" border="0">
 					<tr>
@@ -396,7 +487,7 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 		</table><!-- END: secondaryList -->
 		
 	</td></tr>
-	<tr><td align="center" style="padding-top:20px;">
+	<tr><td align="center" style="padding-top:5px;">
 		<picture>
 			<source srcset="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/timeline.png" media="(min-width:480px)">
 			<source srcset="https://webdevjoshb.github.io/Honda/Dual-Enrollment-eBlasts/img/timeline-320px.png" media="(min-width:320px)">
@@ -427,7 +518,7 @@ a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:active
 		</td></tr>
 		<tr><td style="padding-bottom:10px;color:#000000;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.333em;">
 			Click Service on the Main Menu &gt; Marketing &gt; Lifetime Customer Care (LCC) <br class="hide4mobile"/>
-			&gt; Service Prospecting System &gt; then Seasonal > New
+			&gt; Service Prospecting System &gt; Seasonal &gt; New
 		</td></tr>
 		<tr><td style="color:#000000;font-weight:bold;font-family:Verdana,Arial,sans-serif;font-size:0.75em;line-height:1.333em;">
 			Warranty Customer Retention Program
